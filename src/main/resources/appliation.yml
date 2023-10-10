@@ -1,0 +1,13 @@
+#spring configuration
+spring:
+  application:
+    name: myweb
+
+    #devtools - live reload
+    devtools:
+      livereload:
+        enabled:true
+
+# server
+server:
+  port:8088

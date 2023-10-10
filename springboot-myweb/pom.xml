@@ -12,9 +12,9 @@
 	</parent>	
 	
 	<groupId>com.poscodx.springboot</groupId>
-	<artifactId>springboot-myapplication</artifactId>
+	<artifactId>springboot-myweb</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
+	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.build.outputEncoding>UTF-8</project.build.outputEncoding>
@@ -22,10 +22,29 @@
 	</properties>
 	
 	<dependencies>
-		<!-- Spring Boot Basic Dependency -->
+		<!-- Spring Boot Dev Tools: Live Reload -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+
+		<!-- Spring Web Starter -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- jstl -->
+		<dependency>
+		    <groupId>jstl</groupId>
+		    <artifactId>jstl</artifactId>
+		    <version>1.2</version>
+		</dependency>
+
+		<!-- Tomcat Jasper -->
+		<dependency>
+		    <groupId>org.apache.tomcat.embed</groupId>
+		    <artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
 
 		<!-- Spring Boot Test Integration -->
@@ -37,6 +56,6 @@
 	</dependencies>
 	
 	<build>
-		<finalName>springboot-myapplication</finalName>
+		<finalName>springboot-myweb</finalName>
 	</build>	
 </project>
